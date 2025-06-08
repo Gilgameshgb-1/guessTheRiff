@@ -1,0 +1,400 @@
+[
+  {
+    "id": "song1",
+    "title": "Judas Priest - Painkiller",
+    "description": "Released in 1990, Painkiller is a thunderous declaration of Judas Priest’s place at the pinnacle of heavy metal. Opening with Scott Travis's iconic double-kick drum assault, the track explodes into blistering guitars, Halford’s piercing vocals, and apocalyptic lyricism. A relentless speed metal anthem, it marked a reinvention of the band’s sound and remains one of their most celebrated tracks. Painkiller isn’t just a song — it’s a war cry for metal fans."
+  },
+  {
+    "id": "song2",
+    "title": "Metallica - Enter Sandman"
+  },
+  {
+    "id": "song3",
+    "title": "Iron Maiden - The Trooper"
+  },
+  {
+    "id": "song4",
+    "title": "Black Sabbath - Paranoid"
+  },
+  {
+    "id": "song5",
+    "title": "Led Zeppelin - Stairway to Heaven"
+  },
+  {
+    "id": "song6",
+    "title": "AC/DC - Back In Black"
+  },
+  {
+    "id": "song7",
+    "title": "Deep Purple - Smoke on the Water"
+  },
+  {
+    "id": "song8",
+    "title": "Ozzy Osbourne - Crazy Train"
+  },
+  {
+    "id": "song9",
+    "title": "Dio - Holy Diver"
+  },
+  {
+    "id": "song10",
+    "title": "Megadeth - Symphony of Destruction"
+  },
+  {
+    "id": "song11",
+    "title": "Pantera - Walk"
+  },
+  {
+    "id": "song12",
+    "title": "Slayer - Raining Blood"
+  },
+  {
+    "id": "song13",
+    "title": "Nirvana - Smells Like Teen Spirit"
+  },
+  {
+    "id": "song14",
+    "title": "Alice in Chains - Man in the Box"
+  },
+  {
+    "id": "song15",
+    "title": "Soundgarden - Black Hole Sun"
+  },
+  {
+    "id": "song16",
+    "title": "Pearl Jam - Alive"
+  },
+  {
+    "id": "song17",
+    "title": "System of a Down - Chop Suey!"
+  },
+  {
+    "id": "song18",
+    "title": "Rage Against the Machine - Killing in the Name"
+  },
+  {
+    "id": "song19",
+    "title": "Tool - Schism"
+  },
+  {
+    "id": "song20",
+    "title": "Avenged Sevenfold - Bat Country"
+  },
+  {
+    "id": "song21",
+    "title": "Slipknot - Duality"
+  },
+  {
+    "id": "song22",
+    "title": "Korn - Freak on a Leash"
+  },
+  {
+    "id": "song23",
+    "title": "Linkin Park - In the End"
+  },
+  {
+    "id": "song24",
+    "title": "Disturbed - Down with the Sickness"
+  },
+  {
+    "id": "song25",
+    "title": "Evanescence - Bring Me to Life"
+  },
+  {
+    "id": "song26",
+    "title": "Godsmack - I Stand Alone"
+  },
+  {
+    "id": "song27",
+    "title": "Breaking Benjamin - The Diary of Jane"
+  },
+  {
+    "id": "song28",
+    "title": "Three Days Grace - Animal I Have Become"
+  },
+  {
+    "id": "song29",
+    "title": "Papa Roach - Last Resort"
+  },
+  {
+    "id": "song30",
+    "title": "Seether - Remedy"
+  },
+  {
+    "id": "song31",
+    "title": "Chevelle - The Red"
+  },
+  {
+    "id": "song32",
+    "title": "Five Finger Death Punch - Bad Company"
+  },
+  {
+    "id": "song33",
+    "title": "Halestorm - I Miss the Misery"
+  },
+  {
+    "id": "song34",
+    "title": "Shinedown - Second Chance"
+  },
+  {
+    "id": "song35",
+    "title": "Foo Fighters - Everlong"
+  },
+  {
+    "id": "song36",
+    "title": "Queens of the Stone Age - No One Knows"
+  },
+  {
+    "id": "song37",
+    "title": "Red Hot Chili Peppers - Californication"
+  },
+  {
+    "id": "song38",
+    "title": "The White Stripes - Seven Nation Army"
+  },
+  {
+    "id": "song39",
+    "title": "Muse - Hysteria"
+  },
+  {
+    "id": "song40",
+    "title": "Radiohead - Creep"
+  },
+  {
+    "id": "song41",
+    "title": "Green Day - American Idiot"
+  },
+  {
+    "id": "song42",
+    "title": "My Chemical Romance - Welcome to the Black Parade"
+  },
+  {
+    "id": "song43",
+    "title": "The Offspring - The Kids Aren\u2019t Alright"
+  },
+  {
+    "id": "song44",
+    "title": "Blink-182 - All the Small Things"
+  },
+  {
+    "id": "song45",
+    "title": "Fall Out Boy - Sugar, We're Goin Down"
+  },
+  {
+    "id": "song46",
+    "title": "Paramore - Misery Business"
+  },
+  {
+    "id": "song47",
+    "title": "Arctic Monkeys - Do I Wanna Know?"
+  },
+  {
+    "id": "song48",
+    "title": "The Killers - Mr. Brightside"
+  },
+  {
+    "id": "song49",
+    "title": "Imagine Dragons - Radioactive"
+  },
+  {
+    "id": "song50",
+    "title": "Bring Me The Horizon - Throne"
+  },
+  {
+    "id": "song51",
+    "title": "Ghost - Square Hammer"
+  },
+  {
+    "id": "song52",
+    "title": "Gojira - Stranded"
+  },
+  {
+    "id": "song53",
+    "title": "Mastodon - Blood and Thunder"
+  },
+  {
+    "id": "song54",
+    "title": "Trivium - In Waves"
+  },
+  {
+    "id": "song55",
+    "title": "Lamb of God - Laid to Rest"
+  },
+  {
+    "id": "song56",
+    "title": "Architects - Doomsday"
+  },
+  {
+    "id": "song57",
+    "title": "Beartooth - In Between"
+  },
+  {
+    "id": "song58",
+    "title": "Parkway Drive - Vice Grip"
+  },
+  {
+    "id": "song59",
+    "title": "Powerwolf - Demons Are a Girl's Best Friend"
+  },
+  {
+    "id": "song60",
+    "title": "Sabaton - Bismarck"
+  },
+  {
+    "id": "song61",
+    "title": "Nightwish - Nemo"
+  },
+  {
+    "id": "song62",
+    "title": "Within Temptation - Ice Queen"
+  },
+  {
+    "id": "song63",
+    "title": "Epica - Cry for the Moon"
+  },
+  {
+    "id": "song64",
+    "title": "Kamelot - March of Mephisto"
+  },
+  {
+    "id": "song65",
+    "title": "Dream Theater - Pull Me Under"
+  },
+  {
+    "id": "song66",
+    "title": "Opeth - Ghost of Perdition"
+  },
+  {
+    "id": "song67",
+    "title": "Anathema - Untouchable"
+  },
+  {
+    "id": "song68",
+    "title": "Porcupine Tree - Trains"
+  },
+  {
+    "id": "song69",
+    "title": "The Smashing Pumpkins - Bullet with Butterfly Wings"
+  },
+  {
+    "id": "song70",
+    "title": "Nine Inch Nails - Closer"
+  },
+  {
+    "id": "song71",
+    "title": "Tool - Lateralus"
+  },
+  {
+    "id": "song72",
+    "title": "A Perfect Circle - Judith"
+  },
+  {
+    "id": "song73",
+    "title": "Deftones - My Own Summer"
+  },
+  {
+    "id": "song74",
+    "title": "Static-X - Push It"
+  },
+  {
+    "id": "song75",
+    "title": "Rob Zombie - Dragula"
+  },
+  {
+    "id": "song76",
+    "title": "Marilyn Manson - The Beautiful People"
+  },
+  {
+    "id": "song77",
+    "title": "Rammstein - Du Hast"
+  },
+  {
+    "id": "song78",
+    "title": "Scorpions - Rock You Like a Hurricane"
+  },
+  {
+    "id": "song79",
+    "title": "Europe - The Final Countdown"
+  },
+  {
+    "id": "song80",
+    "title": "Bon Jovi - Livin' on a Prayer"
+  },
+  {
+    "id": "song81",
+    "title": "Def Leppard - Pour Some Sugar on Me"
+  },
+  {
+    "id": "song82",
+    "title": "Skid Row - 18 and Life"
+  },
+  {
+    "id": "song83",
+    "title": "Twisted Sister - We're Not Gonna Take It"
+  },
+  {
+    "id": "song84",
+    "title": "Poison - Nothin' But a Good Time"
+  },
+  {
+    "id": "song85",
+    "title": "Motley Crue - Kickstart My Heart"
+  },
+  {
+    "id": "song86",
+    "title": "Kiss - Rock and Roll All Nite"
+  },
+  {
+    "id": "song87",
+    "title": "Van Halen - Jump"
+  },
+  {
+    "id": "song88",
+    "title": "Rush - Tom Sawyer"
+  },
+  {
+    "id": "song89",
+    "title": "Blue \u00d6yster Cult - (Don't Fear) The Reaper"
+  },
+  {
+    "id": "song90",
+    "title": "Lynyrd Skynyrd - Free Bird"
+  },
+  {
+    "id": "song91",
+    "title": "Creedence Clearwater Revival - Fortunate Son"
+  },
+  {
+    "id": "song92",
+    "title": "The Rolling Stones - Paint It, Black"
+  },
+  {
+    "id": "song93",
+    "title": "The Beatles - Helter Skelter"
+  },
+  {
+    "id": "song94",
+    "title": "The Doors - Break On Through"
+  },
+  {
+    "id": "song95",
+    "title": "Jimi Hendrix - Purple Haze"
+  },
+  {
+    "id": "song96",
+    "title": "Cream - Sunshine of Your Love"
+  },
+  {
+    "id": "song97",
+    "title": "The Who - Baba O'Riley"
+  },
+  {
+    "id": "song98",
+    "title": "Yes - Roundabout"
+  },
+  {
+    "id": "song99",
+    "title": "Megadeth - Trust",
+    "description": "From the 1997 album Cryptic Writings, Trust blends Megadeth’s signature aggression with melodic structure and introspective lyrics. It opens with a distinct drum pattern and evolves into a tight, mid-tempo groove driven by Mustaine’s sharp riffs and cynical take on broken relationships and betrayal. Balancing thrash roots with radio-ready clarity, Trust became one of Megadeth’s biggest hits and a defining song of their late-‘90s evolution."
+  }
+]

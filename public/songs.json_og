@@ -1,0 +1,22 @@
+[
+  {
+    "id": "song1",
+    "title": "Judas Priest - Painkiller"
+  },
+  {
+    "id": "song2",
+    "title": "Metallica - Enter Sandman"
+  },
+  {
+    "id": "song3",
+    "title": "Nirvana - Smells Like Teen Spirit"
+  },
+  {
+    "id": "song4",
+    "title": "ACDC - Back In Black"
+  },
+  {
+    "id": "song5",
+    "title": "Iron Maiden - The Trooper"
+  }
+]
