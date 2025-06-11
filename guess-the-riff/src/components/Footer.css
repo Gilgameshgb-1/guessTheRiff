@@ -1,0 +1,36 @@
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.75rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.footer-logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-separator {
+  border: none;
+  height: 2px;
+  background-color: #00ffcc;
+  width: 100px;
+  margin: 1rem auto;
+}
+
+.footer-text {
+  color: #666;
+  line-height: 1.4;
+  font-size: 0.7rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-text a {
+  color: #00ffcc;
+  text-decoration: none;
+}

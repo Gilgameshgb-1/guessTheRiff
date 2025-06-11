@@ -1,0 +1,1190 @@
+[
+  {
+    "id": "song1",
+    "title": "Judas Priest - Painkiller",
+    "hints": [
+      "",
+      "Artist: Judas Priest",
+      "Release year: 1990",
+      "Genre: Heavy Metal",
+      "Album: Painkiller"
+    ],
+    "description": "Released in 1990, Painkiller is a thunderous declaration of Judas Priest\u2019s place at the pinnacle of heavy metal. Opening with Scott Travis's iconic double-kick drum assault, the track explodes into blistering guitars, Halford\u2019s piercing vocals, and apocalyptic lyricism. A relentless speed metal anthem, it marked a reinvention of the band\u2019s sound and remains one of their most celebrated tracks. Painkiller isn\u2019t just a song \u2014 it\u2019s a war cry for metal fans."
+  },
+  {
+    "id": "song2",
+    "title": "Metallica - Enter Sandman",
+    "hints": [
+      "",
+      "Artist: Metallica",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Enter Sandman"
+    ],
+    "description": "Enter Sandman is a powerful rock anthem by Metallica. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song3",
+    "title": "Iron Maiden - The Trooper",
+    "hints": [
+      "",
+      "Artist: Iron Maiden",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: The Trooper"
+    ],
+    "description": "The Trooper is a powerful rock anthem by Iron Maiden. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song4",
+    "title": "Black Sabbath - Paranoid",
+    "hints": [
+      "",
+      "Artist: Black Sabbath",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Paranoid"
+    ],
+    "description": "Paranoid is a powerful rock anthem by Black Sabbath. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song5",
+    "title": "Led Zeppelin - Stairway to Heaven",
+    "hints": [
+      "",
+      "Artist: Led Zeppelin",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Stairway to Heaven"
+    ],
+    "description": "Stairway to Heaven is a powerful rock anthem by Led Zeppelin. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song6",
+    "title": "AC/DC - Back In Black",
+    "hints": [
+      "",
+      "Artist: AC/DC",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Back In Black"
+    ],
+    "description": "Back In Black is a powerful rock anthem by AC/DC. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song7",
+    "title": "Deep Purple - Smoke on the Water",
+    "hints": [
+      "",
+      "Artist: Deep Purple",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Smoke on the Water"
+    ],
+    "description": "Smoke on the Water is a powerful rock anthem by Deep Purple. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song8",
+    "title": "Ozzy Osbourne - Crazy Train",
+    "hints": [
+      "",
+      "Artist: Ozzy Osbourne",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Crazy Train"
+    ],
+    "description": "Crazy Train is a powerful rock anthem by Ozzy Osbourne. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song9",
+    "title": "Dio - Holy Diver",
+    "hints": [
+      "",
+      "Artist: Dio",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Holy Diver"
+    ],
+    "description": "Holy Diver is a powerful rock anthem by Dio. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song10",
+    "title": "Megadeth - Symphony of Destruction",
+    "hints": [
+      "",
+      "Artist: Megadeth",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Symphony of Destruction"
+    ],
+    "description": "Symphony of Destruction is a powerful rock anthem by Megadeth. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song11",
+    "title": "Pantera - Walk",
+    "hints": [
+      "",
+      "Artist: Pantera",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Walk"
+    ],
+    "description": "Walk is a powerful rock anthem by Pantera. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song12",
+    "title": "Slayer - Raining Blood",
+    "hints": [
+      "",
+      "Artist: Slayer",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Raining Blood"
+    ],
+    "description": "Raining Blood is a powerful rock anthem by Slayer. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song13",
+    "title": "Nirvana - Smells Like Teen Spirit",
+    "hints": [
+      "",
+      "Artist: Nirvana",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Smells Like Teen Spirit"
+    ],
+    "description": "Smells Like Teen Spirit is a powerful rock anthem by Nirvana. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song14",
+    "title": "Alice in Chains - Man in the Box",
+    "hints": [
+      "",
+      "Artist: Alice in Chains",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Man in the Box"
+    ],
+    "description": "Man in the Box is a powerful rock anthem by Alice in Chains. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song15",
+    "title": "Soundgarden - Black Hole Sun",
+    "hints": [
+      "",
+      "Artist: Soundgarden",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Black Hole Sun"
+    ],
+    "description": "Black Hole Sun is a powerful rock anthem by Soundgarden. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song16",
+    "title": "Pearl Jam - Alive",
+    "hints": [
+      "",
+      "Artist: Pearl Jam",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Alive"
+    ],
+    "description": "Alive is a powerful rock anthem by Pearl Jam. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song17",
+    "title": "System of a Down - Chop Suey!",
+    "hints": [
+      "",
+      "Artist: System of a Down",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Chop Suey!"
+    ],
+    "description": "Chop Suey! is a powerful rock anthem by System of a Down. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song18",
+    "title": "Rage Against the Machine - Killing in the Name",
+    "hints": [
+      "",
+      "Artist: Rage Against the Machine",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Killing in the Name"
+    ],
+    "description": "Killing in the Name is a powerful rock anthem by Rage Against the Machine. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song19",
+    "title": "Tool - Schism",
+    "hints": [
+      "",
+      "Artist: Tool",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Schism"
+    ],
+    "description": "Schism is a powerful rock anthem by Tool. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song20",
+    "title": "Avenged Sevenfold - Bat Country",
+    "hints": [
+      "",
+      "Artist: Avenged Sevenfold",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Bat Country"
+    ],
+    "description": "Bat Country is a powerful rock anthem by Avenged Sevenfold. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song21",
+    "title": "Slipknot - Duality",
+    "hints": [
+      "",
+      "Artist: Slipknot",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Duality"
+    ],
+    "description": "Duality is a powerful rock anthem by Slipknot. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song22",
+    "title": "Korn - Freak on a Leash",
+    "hints": [
+      "",
+      "Artist: Korn",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Freak on a Leash"
+    ],
+    "description": "Freak on a Leash is a powerful rock anthem by Korn. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song23",
+    "title": "Linkin Park - In the End",
+    "hints": [
+      "",
+      "Artist: Linkin Park",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: In the End"
+    ],
+    "description": "In the End is a powerful rock anthem by Linkin Park. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song24",
+    "title": "Disturbed - Down with the Sickness",
+    "hints": [
+      "",
+      "Artist: Disturbed",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Down with the Sickness"
+    ],
+    "description": "Down with the Sickness is a powerful rock anthem by Disturbed. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song25",
+    "title": "Evanescence - Bring Me to Life",
+    "hints": [
+      "",
+      "Artist: Evanescence",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Bring Me to Life"
+    ],
+    "description": "Bring Me to Life is a powerful rock anthem by Evanescence. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song26",
+    "title": "Godsmack - I Stand Alone",
+    "hints": [
+      "",
+      "Artist: Godsmack",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: I Stand Alone"
+    ],
+    "description": "I Stand Alone is a powerful rock anthem by Godsmack. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song27",
+    "title": "Breaking Benjamin - The Diary of Jane",
+    "hints": [
+      "",
+      "Artist: Breaking Benjamin",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: The Diary of Jane"
+    ],
+    "description": "The Diary of Jane is a powerful rock anthem by Breaking Benjamin. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song28",
+    "title": "Three Days Grace - Animal I Have Become",
+    "hints": [
+      "",
+      "Artist: Three Days Grace",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Animal I Have Become"
+    ],
+    "description": "Animal I Have Become is a powerful rock anthem by Three Days Grace. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song29",
+    "title": "Papa Roach - Last Resort",
+    "hints": [
+      "",
+      "Artist: Papa Roach",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Last Resort"
+    ],
+    "description": "Last Resort is a powerful rock anthem by Papa Roach. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song30",
+    "title": "Seether - Remedy",
+    "hints": [
+      "",
+      "Artist: Seether",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Remedy"
+    ],
+    "description": "Remedy is a powerful rock anthem by Seether. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song31",
+    "title": "Chevelle - The Red",
+    "hints": [
+      "",
+      "Artist: Chevelle",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: The Red"
+    ],
+    "description": "The Red is a powerful rock anthem by Chevelle. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song32",
+    "title": "Five Finger Death Punch - Bad Company",
+    "hints": [
+      "",
+      "Artist: Five Finger Death Punch",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Bad Company"
+    ],
+    "description": "Bad Company is a powerful rock anthem by Five Finger Death Punch. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song33",
+    "title": "Halestorm - I Miss the Misery",
+    "hints": [
+      "",
+      "Artist: Halestorm",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: I Miss the Misery"
+    ],
+    "description": "I Miss the Misery is a powerful rock anthem by Halestorm. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song34",
+    "title": "Shinedown - Second Chance",
+    "hints": [
+      "",
+      "Artist: Shinedown",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Second Chance"
+    ],
+    "description": "Second Chance is a powerful rock anthem by Shinedown. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song35",
+    "title": "Foo Fighters - Everlong",
+    "hints": [
+      "",
+      "Artist: Foo Fighters",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Everlong"
+    ],
+    "description": "Everlong is a powerful rock anthem by Foo Fighters. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song36",
+    "title": "Queens of the Stone Age - No One Knows",
+    "hints": [
+      "",
+      "Artist: Queens of the Stone Age",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: No One Knows"
+    ],
+    "description": "No One Knows is a powerful rock anthem by Queens of the Stone Age. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song37",
+    "title": "Red Hot Chili Peppers - Californication",
+    "hints": [
+      "",
+      "Artist: Red Hot Chili Peppers",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Californication"
+    ],
+    "description": "Californication is a powerful rock anthem by Red Hot Chili Peppers. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song38",
+    "title": "The White Stripes - Seven Nation Army",
+    "hints": [
+      "",
+      "Artist: The White Stripes",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Seven Nation Army"
+    ],
+    "description": "Seven Nation Army is a powerful rock anthem by The White Stripes. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song39",
+    "title": "Muse - Hysteria",
+    "hints": [
+      "",
+      "Artist: Muse",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Hysteria"
+    ],
+    "description": "Hysteria is a powerful rock anthem by Muse. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song40",
+    "title": "Radiohead - Creep",
+    "hints": [
+      "",
+      "Artist: Radiohead",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Creep"
+    ],
+    "description": "Creep is a powerful rock anthem by Radiohead. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song41",
+    "title": "Green Day - American Idiot",
+    "hints": [
+      "",
+      "Artist: Green Day",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: American Idiot"
+    ],
+    "description": "American Idiot is a powerful rock anthem by Green Day. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song42",
+    "title": "My Chemical Romance - Welcome to the Black Parade",
+    "hints": [
+      "",
+      "Artist: My Chemical Romance",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Welcome to the Black Parade"
+    ],
+    "description": "Welcome to the Black Parade is a powerful rock anthem by My Chemical Romance. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song43",
+    "title": "The Offspring - The Kids Aren\u2019t Alright",
+    "hints": [
+      "",
+      "Artist: The Offspring",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: The Kids Aren\u2019t Alright"
+    ],
+    "description": "The Kids Aren\u2019t Alright is a powerful rock anthem by The Offspring. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song44",
+    "title": "Blink-182 - All the Small Things",
+    "hints": [
+      "",
+      "Artist: Blink-182",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: All the Small Things"
+    ],
+    "description": "All the Small Things is a powerful rock anthem by Blink-182. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song45",
+    "title": "Fall Out Boy - Sugar, We're Goin Down",
+    "hints": [
+      "",
+      "Artist: Fall Out Boy",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Sugar, We're Goin Down"
+    ],
+    "description": "Sugar, We're Goin Down is a powerful rock anthem by Fall Out Boy. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song46",
+    "title": "Paramore - Misery Business",
+    "hints": [
+      "",
+      "Artist: Paramore",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Misery Business"
+    ],
+    "description": "Misery Business is a powerful rock anthem by Paramore. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song47",
+    "title": "Arctic Monkeys - Do I Wanna Know?",
+    "hints": [
+      "",
+      "Artist: Arctic Monkeys",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Do I Wanna Know?"
+    ],
+    "description": "Do I Wanna Know? is a powerful rock anthem by Arctic Monkeys. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song48",
+    "title": "The Killers - Mr. Brightside",
+    "hints": [
+      "",
+      "Artist: The Killers",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Mr. Brightside"
+    ],
+    "description": "Mr. Brightside is a powerful rock anthem by The Killers. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song49",
+    "title": "Imagine Dragons - Radioactive",
+    "hints": [
+      "",
+      "Artist: Imagine Dragons",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Radioactive"
+    ],
+    "description": "Radioactive is a powerful rock anthem by Imagine Dragons. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song50",
+    "title": "Bring Me The Horizon - Throne",
+    "hints": [
+      "",
+      "Artist: Bring Me The Horizon",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Throne"
+    ],
+    "description": "Throne is a powerful rock anthem by Bring Me The Horizon. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song51",
+    "title": "Ghost - Square Hammer",
+    "hints": [
+      "",
+      "Artist: Ghost",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Square Hammer"
+    ],
+    "description": "Square Hammer is a powerful rock anthem by Ghost. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song52",
+    "title": "Gojira - Stranded",
+    "hints": [
+      "",
+      "Artist: Gojira",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Stranded"
+    ],
+    "description": "Stranded is a powerful rock anthem by Gojira. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song53",
+    "title": "Mastodon - Blood and Thunder",
+    "hints": [
+      "",
+      "Artist: Mastodon",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Blood and Thunder"
+    ],
+    "description": "Blood and Thunder is a powerful rock anthem by Mastodon. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song54",
+    "title": "Trivium - In Waves",
+    "hints": [
+      "",
+      "Artist: Trivium",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: In Waves"
+    ],
+    "description": "In Waves is a powerful rock anthem by Trivium. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song55",
+    "title": "Lamb of God - Laid to Rest",
+    "hints": [
+      "",
+      "Artist: Lamb of God",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Laid to Rest"
+    ],
+    "description": "Laid to Rest is a powerful rock anthem by Lamb of God. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song56",
+    "title": "Architects - Doomsday",
+    "hints": [
+      "",
+      "Artist: Architects",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Doomsday"
+    ],
+    "description": "Doomsday is a powerful rock anthem by Architects. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song57",
+    "title": "Beartooth - In Between",
+    "hints": [
+      "",
+      "Artist: Beartooth",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: In Between"
+    ],
+    "description": "In Between is a powerful rock anthem by Beartooth. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song58",
+    "title": "Parkway Drive - Vice Grip",
+    "hints": [
+      "",
+      "Artist: Parkway Drive",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Vice Grip"
+    ],
+    "description": "Vice Grip is a powerful rock anthem by Parkway Drive. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song59",
+    "title": "Powerwolf - Demons Are a Girl's Best Friend",
+    "hints": [
+      "",
+      "Artist: Powerwolf",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Demons Are a Girl's Best Friend"
+    ],
+    "description": "Demons Are a Girl's Best Friend is a powerful rock anthem by Powerwolf. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song60",
+    "title": "Sabaton - Bismarck",
+    "hints": [
+      "",
+      "Artist: Sabaton",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Bismarck"
+    ],
+    "description": "Bismarck is a powerful rock anthem by Sabaton. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song61",
+    "title": "Nightwish - Nemo",
+    "hints": [
+      "",
+      "Artist: Nightwish",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Nemo"
+    ],
+    "description": "Nemo is a powerful rock anthem by Nightwish. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song62",
+    "title": "Within Temptation - Ice Queen",
+    "hints": [
+      "",
+      "Artist: Within Temptation",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Ice Queen"
+    ],
+    "description": "Ice Queen is a powerful rock anthem by Within Temptation. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song63",
+    "title": "Epica - Cry for the Moon",
+    "hints": [
+      "",
+      "Artist: Epica",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Cry for the Moon"
+    ],
+    "description": "Cry for the Moon is a powerful rock anthem by Epica. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song64",
+    "title": "Kamelot - March of Mephisto",
+    "hints": [
+      "",
+      "Artist: Kamelot",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: March of Mephisto"
+    ],
+    "description": "March of Mephisto is a powerful rock anthem by Kamelot. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song65",
+    "title": "Dream Theater - Pull Me Under",
+    "hints": [
+      "",
+      "Artist: Dream Theater",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Pull Me Under"
+    ],
+    "description": "Pull Me Under is a powerful rock anthem by Dream Theater. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song66",
+    "title": "Opeth - Ghost of Perdition",
+    "hints": [
+      "",
+      "Artist: Opeth",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Ghost of Perdition"
+    ],
+    "description": "Ghost of Perdition is a powerful rock anthem by Opeth. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song67",
+    "title": "Anathema - Untouchable",
+    "hints": [
+      "",
+      "Artist: Anathema",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Untouchable"
+    ],
+    "description": "Untouchable is a powerful rock anthem by Anathema. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song68",
+    "title": "Porcupine Tree - Trains",
+    "hints": [
+      "",
+      "Artist: Porcupine Tree",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Trains"
+    ],
+    "description": "Trains is a powerful rock anthem by Porcupine Tree. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song69",
+    "title": "The Smashing Pumpkins - Bullet with Butterfly Wings",
+    "hints": [
+      "",
+      "Artist: The Smashing Pumpkins",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Bullet with Butterfly Wings"
+    ],
+    "description": "Bullet with Butterfly Wings is a powerful rock anthem by The Smashing Pumpkins. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song70",
+    "title": "Nine Inch Nails - Closer",
+    "hints": [
+      "",
+      "Artist: Nine Inch Nails",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Closer"
+    ],
+    "description": "Closer is a powerful rock anthem by Nine Inch Nails. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song71",
+    "title": "Tool - Lateralus",
+    "hints": [
+      "",
+      "Artist: Tool",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Lateralus"
+    ],
+    "description": "Lateralus is a powerful rock anthem by Tool. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song72",
+    "title": "A Perfect Circle - Judith",
+    "hints": [
+      "",
+      "Artist: A Perfect Circle",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Judith"
+    ],
+    "description": "Judith is a powerful rock anthem by A Perfect Circle. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song73",
+    "title": "Deftones - My Own Summer",
+    "hints": [
+      "",
+      "Artist: Deftones",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: My Own Summer"
+    ],
+    "description": "My Own Summer is a powerful rock anthem by Deftones. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song74",
+    "title": "Static-X - Push It",
+    "hints": [
+      "",
+      "Artist: Static-X",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Push It"
+    ],
+    "description": "Push It is a powerful rock anthem by Static-X. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song75",
+    "title": "Rob Zombie - Dragula",
+    "hints": [
+      "",
+      "Artist: Rob Zombie",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Dragula"
+    ],
+    "description": "Dragula is a powerful rock anthem by Rob Zombie. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song76",
+    "title": "Marilyn Manson - The Beautiful People",
+    "hints": [
+      "",
+      "Artist: Marilyn Manson",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: The Beautiful People"
+    ],
+    "description": "The Beautiful People is a powerful rock anthem by Marilyn Manson. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song77",
+    "title": "Rammstein - Du Hast",
+    "hints": [
+      "",
+      "Artist: Rammstein",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Du Hast"
+    ],
+    "description": "Du Hast is a powerful rock anthem by Rammstein. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song78",
+    "title": "Scorpions - Rock You Like a Hurricane",
+    "hints": [
+      "",
+      "Artist: Scorpions",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Rock You Like a Hurricane"
+    ],
+    "description": "Rock You Like a Hurricane is a powerful rock anthem by Scorpions. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song79",
+    "title": "Europe - The Final Countdown",
+    "hints": [
+      "",
+      "Artist: Europe",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: The Final Countdown"
+    ],
+    "description": "The Final Countdown is a powerful rock anthem by Europe. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song80",
+    "title": "Bon Jovi - Livin' on a Prayer",
+    "hints": [
+      "",
+      "Artist: Bon Jovi",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Livin' on a Prayer"
+    ],
+    "description": "Livin' on a Prayer is a powerful rock anthem by Bon Jovi. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song81",
+    "title": "Def Leppard - Pour Some Sugar on Me",
+    "hints": [
+      "",
+      "Artist: Def Leppard",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Pour Some Sugar on Me"
+    ],
+    "description": "Pour Some Sugar on Me is a powerful rock anthem by Def Leppard. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song82",
+    "title": "Skid Row - 18 and Life",
+    "hints": [
+      "",
+      "Artist: Skid Row",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: 18 and Life"
+    ],
+    "description": "18 and Life is a powerful rock anthem by Skid Row. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song83",
+    "title": "Twisted Sister - We're Not Gonna Take It",
+    "hints": [
+      "",
+      "Artist: Twisted Sister",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: We're Not Gonna Take It"
+    ],
+    "description": "We're Not Gonna Take It is a powerful rock anthem by Twisted Sister. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song84",
+    "title": "Poison - Nothin' But a Good Time",
+    "hints": [
+      "",
+      "Artist: Poison",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Nothin' But a Good Time"
+    ],
+    "description": "Nothin' But a Good Time is a powerful rock anthem by Poison. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song85",
+    "title": "Motley Crue - Kickstart My Heart",
+    "hints": [
+      "",
+      "Artist: Motley Crue",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Kickstart My Heart"
+    ],
+    "description": "Kickstart My Heart is a powerful rock anthem by Motley Crue. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song86",
+    "title": "Kiss - Rock and Roll All Nite",
+    "hints": [
+      "",
+      "Artist: Kiss",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Rock and Roll All Nite"
+    ],
+    "description": "Rock and Roll All Nite is a powerful rock anthem by Kiss. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song87",
+    "title": "Van Halen - Jump",
+    "hints": [
+      "",
+      "Artist: Van Halen",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Jump"
+    ],
+    "description": "Jump is a powerful rock anthem by Van Halen. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song88",
+    "title": "Rush - Tom Sawyer",
+    "hints": [
+      "",
+      "Artist: Rush",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Tom Sawyer"
+    ],
+    "description": "Tom Sawyer is a powerful rock anthem by Rush. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song89",
+    "title": "Blue \u00d6yster Cult - (Don't Fear) The Reaper",
+    "hints": [
+      "",
+      "Artist: Blue \u00d6yster Cult",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: (Don't Fear) The Reaper"
+    ],
+    "description": "(Don't Fear) The Reaper is a powerful rock anthem by Blue \u00d6yster Cult. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song90",
+    "title": "Lynyrd Skynyrd - Free Bird",
+    "hints": [
+      "",
+      "Artist: Lynyrd Skynyrd",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Free Bird"
+    ],
+    "description": "Free Bird is a powerful rock anthem by Lynyrd Skynyrd. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song91",
+    "title": "Creedence Clearwater Revival - Fortunate Son",
+    "hints": [
+      "",
+      "Artist: Creedence Clearwater Revival",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Fortunate Son"
+    ],
+    "description": "Fortunate Son is a powerful rock anthem by Creedence Clearwater Revival. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song92",
+    "title": "The Rolling Stones - Paint It, Black",
+    "hints": [
+      "",
+      "Artist: The Rolling Stones",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Paint It, Black"
+    ],
+    "description": "Paint It, Black is a powerful rock anthem by The Rolling Stones. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song93",
+    "title": "The Beatles - Helter Skelter",
+    "hints": [
+      "",
+      "Artist: The Beatles",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Helter Skelter"
+    ],
+    "description": "Helter Skelter is a powerful rock anthem by The Beatles. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song94",
+    "title": "The Doors - Break On Through",
+    "hints": [
+      "",
+      "Artist: The Doors",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Break On Through"
+    ],
+    "description": "Break On Through is a powerful rock anthem by The Doors. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song95",
+    "title": "Jimi Hendrix - Purple Haze",
+    "hints": [
+      "",
+      "Artist: Jimi Hendrix",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Purple Haze"
+    ],
+    "description": "Purple Haze is a powerful rock anthem by Jimi Hendrix. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song96",
+    "title": "Cream - Sunshine of Your Love",
+    "hints": [
+      "",
+      "Artist: Cream",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Sunshine of Your Love"
+    ],
+    "description": "Sunshine of Your Love is a powerful rock anthem by Cream. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song97",
+    "title": "The Who - Baba O'Riley",
+    "hints": [
+      "",
+      "Artist: The Who",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Baba O'Riley"
+    ],
+    "description": "Baba O'Riley is a powerful rock anthem by The Who. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song98",
+    "title": "Yes - Roundabout",
+    "hints": [
+      "",
+      "Artist: Yes",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Roundabout"
+    ],
+    "description": "Roundabout is a powerful rock anthem by Yes. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world."
+  },
+  {
+    "id": "song99",
+    "title": "Megadeth - Trust",
+    "description": "Trust is a powerful rock anthem by Megadeth. With its gripping riffs and unforgettable chorus, this song has become a staple of the genre. It blends emotion, energy, and musical mastery to deliver a timeless classic that continues to inspire fans around the world.",
+    "hints": [
+      "",
+      "Artist: Megadeth",
+      "Release year: 19XX",
+      "Genre: Rock",
+      "Album: Trust"
+    ]
+  }
+]

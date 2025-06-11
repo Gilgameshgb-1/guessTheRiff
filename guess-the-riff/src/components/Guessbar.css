@@ -1,0 +1,68 @@
+.guess-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.guess-icons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.guess-box {
+    width: 30px;
+    height: 38px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    color: white;
+}
+
+.guess-box.used {
+    background-color: black;
+    color: white;
+}
+
+.guess-box.current {
+    background-color: white;
+    color: black;
+}
+
+.skip-button {
+    background-color: #00ffcc;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.4rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+    min-height: 2vw;
+    cursor: pointer;
+}
+
+.guess-remaining {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.skull-icon {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    /* or your desired color */
+}
+
+.thunder-icon {
+    width: 18px;
+    height: 18px;
+}

@@ -1,0 +1,59 @@
+/* Main wrapper that handles centering and layout */
+.header {
+  background-color: #031111;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Internal layout: logo centered, icons to the right */
+.header-content {
+  position: relative;
+  width: 100%;
+  max-width: 38vw;
+  padding: 0 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-svg {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+/* Right-aligned nav icons */
+.nav-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  cursor: pointer;
+  transition: stroke 0.2s ease;
+}
+
+.icon:hover {
+  stroke: #00ffcc;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
