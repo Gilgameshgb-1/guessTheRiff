@@ -59,10 +59,34 @@
     width: 18px;
     height: 18px;
     fill: white;
-    /* or your desired color */
 }
 
 .thunder-icon {
     width: 18px;
     height: 18px;
+}
+
+.guess-history {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.guess-entry {
+    padding: 4px 0;
+}
+
+.guess-entry.correct {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+.guess-entry.incorrect {
+    color: #ff4e4e;
+}
+
+.guess-entry.skipped {
+  color: #ffaa00;
+  font-style: italic;
 }

@@ -6,9 +6,10 @@ interface AudioPlayerProps {
   songId: string;
   hint: string;
   currentGuessIndex: number;
+  gameOver: boolean;
 }
 
-export default function AudioPlayer({ songId, hint, currentGuessIndex }: AudioPlayerProps) {
+export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -106,7 +107,11 @@ export default function AudioPlayer({ songId, hint, currentGuessIndex }: AudioPl
         <audio
           ref={audioRef}
           //src={`/songs/${songId}/${songId}.mp3`}
-          src={`/songs/${songId}/${currentGuessIndex >= 5 ? songId : `guess${currentGuessIndex + 1}`}.mp3`}
+          src={
+            gameOver?
+            `/songs/${songId}/song1.mp3`
+            :`/songs/${songId}/${currentGuessIndex >= 5 ? songId : `guess${currentGuessIndex + 1}`}.mp3`
+          }
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}
         />

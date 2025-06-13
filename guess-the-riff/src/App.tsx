@@ -15,34 +15,43 @@ interface Song {
   hints: string[];
 }
 
+type Guess = {
+  text: string;
+  isCorrect?: boolean;
+  skipped?: boolean;
+};
+
 let currentGuessIndex = 0;
 
 const allSongs: Song[] = songs;
 
 function App() {
   const [guesses, setGuesses] = useState<(string | null)[]>([]);
+  const [guessHistory, setGuessHistory] = useState<Guess[]>([]);
   const [input, setInput] = useState("");
   const [currentGuessIndex, setCurrentGuessIndex] = useState(0);
   const [selectedGuessIndex, setSelectedGuessIndex] = useState(currentGuessIndex);
+  const [gameOver, setGameOver] = useState(false); //track game over
 
   const maxGuesses = 5;
   const currentSong = allSongs[0]; //fixed for now, first song is picked, logic might be differently updated
 
   const currentHint = currentSong?.hints?.[guesses.length]; //Extract hint
 
-  const handleGuessSubmit = () => {
-    if (guesses.length >= maxGuesses) return;
-
-    const isCorrect = input.trim().toLowerCase() === currentSong.title.toLowerCase();
-    const nextGuesses = [...guesses, isCorrect ? input : null];
+  const handleGuessSubmit = (guess: string) => {
+    const isCorrect = guess.toLowerCase() === currentSong.title.toLowerCase();
+    const nextGuesses = [...guesses, isCorrect ? guess : null];
     setGuesses(nextGuesses);
 
+    const guessText = guess.trim();
+    setGuessHistory(prev => [...prev, { text: guessText, isCorrect }]);
+
     if (isCorrect) {
-      alert("Correct guess! 🎉");
-      //close guessing - remove guess bar, show guesses prompt 
+      alert("✅ Correct!");
+      setGameOver(true);
     } else if (nextGuesses.length >= maxGuesses) {
-      alert("Out of guesses! ❌");
-      //same as up more or  less
+      setGameOver(true);
+      alert("❌ Out of guesses!");
     }
     setCurrentGuessIndex(currentGuessIndex + 1);
     setSelectedGuessIndex(currentGuessIndex + 1);
@@ -50,27 +59,36 @@ function App() {
     setInput("");
   };
 
+  const handleSkip = () => {
+    if (guesses.length >= maxGuesses) return;
+
+    setGuessHistory(prev => [...prev, { text: "Skipped", skipped: true }]);
+
+    setGuesses([...guesses, null]); // Count this as a guess
+    setCurrentGuessIndex(currentGuessIndex + 1);
+    setSelectedGuessIndex(currentGuessIndex + 1);
+  };
+
   return (
     <div className="app">
       <Header />
       <main className="main-content">
-        <AudioPlayer songId={currentSong?.id || ""} hint={currentSong?.hints?.[selectedGuessIndex] ?? ""} currentGuessIndex={currentGuessIndex} />
+        <AudioPlayer songId={currentSong?.id || ""} hint={currentSong?.hints?.[selectedGuessIndex] ?? ""} currentGuessIndex={currentGuessIndex} gameOver={gameOver} />
         <GuessBar
           currentGuessIndex={guesses.length}
           totalGuesses={guesses.filter((g) => g === null).length}
           maxGuesses={maxGuesses}
           selectedGuessIndex={selectedGuessIndex}
           setSelectedGuessIndex={setSelectedGuessIndex}
+          handleSkip={handleSkip}
+          guessHistory={guessHistory}
         />
-        {/* <SearchBar input={input} onInput={setInput} onSubmit={handleGuessSubmit} /> */}
-        <SearchBar
-          songList={songs}
-          onSongSelect={(title) => {
-            console.log("User selected:", title);
-            // Optionally set guess input state here
-          }}
-        />
-
+        {!gameOver && (
+          <SearchBar
+            songList={songs}
+            onSubmitGuess={handleGuessSubmit}
+          />
+        )}
         <RiffControls />
         <Footer />
       </main>

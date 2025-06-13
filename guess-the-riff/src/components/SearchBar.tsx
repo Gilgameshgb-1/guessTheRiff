@@ -1,79 +1,64 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import "./SearchBar.css";
 
-interface Song {
-  id: string;
-  title: string;
-}
-
-/* interface SearchBarProps {
-  input: string;
-  onInput: (val: string) => void;
-  onSubmit: () => void;
-} */
-
 interface SearchBarProps {
-  songList: Song[];
-  onSongSelect: (songTitle: string) => void;
+  songList: { title: string }[];
+  onSubmitGuess: (guess: string) => void;
 }
 
-/* export default function SearchBar({ input, onInput, onSubmit }: SearchBarProps) {
+export default function SearchBar({ songList, onSubmitGuess }: SearchBarProps) {
+  const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState<string[]>([]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const input = e.target.value;
+    setQuery(input);
+    if (input.length > 0) {
+      const filtered = songList
+        .map((s) => s.title)
+        .filter((title) => title.toLowerCase().includes(input.toLowerCase()));
+      setSuggestions(filtered.slice(0, 5));
+    } else {
+      setSuggestions([]);
+    }
+  };
+
+  const handleSelect = (suggestion: string) => {
+    setQuery(suggestion);
+    setSuggestions([]);
+  };
+
+  const handleSubmit = () => {
+    if (!query.trim()) return;
+    onSubmitGuess(query.trim());
+    setQuery("");
+    setSuggestions([]);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") handleSubmit();
+  };
+
   return (
     <div className="search-bar">
-      <input
-        type="text"
-        className="search-input"
-        placeholder="Search for a song"
-        value={input}
-        onChange={(e) => onInput(e.target.value)}
-      />
-      <button className="submit-button" onClick={onSubmit}>
+        <input
+          type="text"
+          className="search-input"
+          value={query}
+          onChange={handleChange}
+          onKeyDown={handleKeyDown}
+          placeholder="Type your guess..."
+        />
+      <button onClick={handleSubmit} className="submit-button">
         SUBMIT!
       </button>
-    </div>
-  );
-} */
-
-  export default function SearchBar({ songList, onSongSelect }: SearchBarProps) {
-  const [query, setQuery] = useState("");
-  const [suggestions, setSuggestions] = useState<Song[]>([]);
-
-  useEffect(() => {
-    if (query.trim().length === 0) {
-      setSuggestions([]);
-      return;
-    }
-
-    const lower = query.toLowerCase();
-    const matches = songList.filter(song => song.title.toLowerCase().includes(lower));
-    setSuggestions(matches.slice(0, 10)); // limit to top 10
-  }, [query, songList]);
-
-  return (
-    <div className="search-container">
-      <input
-        type="text"
-        value={query}
-        onChange={e => setQuery(e.target.value)}
-        placeholder="Search for a song"
-        className="search-input"
-      />
-      {suggestions.length > 0 && (
-        <ul className="suggestion-list">
-          {suggestions.map((song) => (
-            <li
-              key={song.id}
-              onClick={() => {
-                setQuery(song.title);
-                setSuggestions([]);
-                onSongSelect(song.title);
-              }}
-            >
-              {song.title}
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className="suggestions">
+        {suggestions.map((s, i) => (
+          <li key={i} onClick={() => handleSelect(s)}>
+            {s}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
