@@ -47,7 +47,7 @@ export default function SearchBar({ songList, onSubmitGuess }: SearchBarProps) {
           value={query}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
-          placeholder="Type your guess..."
+          placeholder="Search for a song"
         />
       <button onClick={handleSubmit} className="submit-button">
         SUBMIT!

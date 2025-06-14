@@ -1,0 +1,56 @@
+.guess-result-container {
+  background-color: #11181f;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 720px;
+  margin: 1.5rem auto;
+  margin-bottom: 2rem;
+}
+
+.guess-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+}
+
+.song-icon {
+  font-size: 1.4rem;
+  margin-right: 0.6rem;
+}
+
+.song-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00ffce;
+  margin: 0;
+}
+
+.affiliate-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.affiliate-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.affiliate-icon:hover {
+  transform: scale(1.1);
+}
+
+.song-description {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}

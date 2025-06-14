@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import "./AudioPlayer.css";
 import PlayIcon from "../assets/playbutton.svg?react";
+import HintCheck from "../assets/hintCheck.svg?react";
 
 interface AudioPlayerProps {
   songId: string;
   hint: string;
   currentGuessIndex: number;
+  selectedGuessIndex: number;
   gameOver: boolean;
 }
 
-export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver }: AudioPlayerProps) {
+export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver, selectedGuessIndex }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -55,12 +57,16 @@ export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver 
     return `${minutes}:${seconds.toString().padStart(2, "0")}`;
   };
 
+  const numericId = parseInt(songId?.replace("song", "") ?? "1", 10);
+
   return (
     <div className="audio-player-container">
       <p className="audio-riff">
-        <span className="riff-number">Riff #1</span>{" "}
+        <span className="riff-number">Riff #{numericId}</span>{" "}
       </p>
-      <p className="audio-hint">{hint}</p>
+      <p className={`audio-hint ${selectedGuessIndex === 0 ? "hidden" : ""}`}> 
+        {hint} 
+        <HintCheck className="hint-check-icon" style={{ display: (selectedGuessIndex === 0 || selectedGuessIndex >= 5) ? "none" : "inline" }} /></p>
       <div className="audio-box">
         <div className="audio-top-row">
           <span className="audio-timestamp">{formatTime(currentTime)}</span>
@@ -108,12 +114,13 @@ export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver 
           ref={audioRef}
           //src={`/songs/${songId}/${songId}.mp3`}
           src={
-            gameOver?
-            `/songs/${songId}/song1.mp3`
-            :`/songs/${songId}/${currentGuessIndex >= 5 ? songId : `guess${currentGuessIndex + 1}`}.mp3`
+            gameOver ?
+              `/songs/${songId}/${songId}.mp3`
+              : `/songs/${songId}/${currentGuessIndex >= 5 ? songId : `guess${currentGuessIndex + 1}`}.mp3`
           }
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}
+          onEnded={() => {setIsPlaying(false); setCurrentTime(0);}}
         />
       </div>
     </div>

@@ -7,24 +7,29 @@
 }
 
 .audio-riff {
-    color: white;
+    color: #00ffce;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .audio-hint {
-    color: white;
+    /* color: white; */
+    height: 1rem;
     margin-bottom: 1rem;
     align-self: flex-start;
 }
 
 .riff-number {
-    font-weight: bold;
+    fill: #00ffce !important;
+    /* font-weight: bold; */
 }
 
-.check-icon {
-    color: #00ffce;
-    margin-left: 4px;
+.hint-check-icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  vertical-align: middle;
+  color: #ff00ea;
 }
 
 .audio-box {

@@ -1,99 +1,45 @@
-import { useState } from "react";
-import Header from "./components/Header";
-import AudioPlayer from "./components/AudioPlayer";
-import GuessBar from "./components/GuessBar";
-import SearchBar from "./components/SearchBar";
-import RiffControls from "./components/RiffControls";
-import Footer from "./components/Footer";
-import "./App.css";
+// src/App.tsx
+import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Game from "./Game";
 import songs from "../public/songs/songs.json";
 
-interface Song {
-  id: string;
-  title: string;
-  description?: string;
-  hints: string[];
+export default function App() {
+    return (
+        <Routes>
+            <Route path="/s/:songId" element={<GameWrapper />} />
+            <Route path="*" element={<Navigate to="/s/1" />} />
+        </Routes>
+    );
 }
 
-type Guess = {
-  text: string;
-  isCorrect?: boolean;
-  skipped?: boolean;
-};
+function GameWrapper() {
+    const { songId } = useParams<{ songId: string }>();
+    const navigate = useNavigate();
+    const allSongs = songs;
 
-let currentGuessIndex = 0;
+    const indexFromUrl = songId ? Math.max(0, Math.min(allSongs.length - 1, parseInt(songId) - 1)) : 0;
+    const isValidIndex = !isNaN(indexFromUrl) && indexFromUrl >= 0 && indexFromUrl < songs.length;
 
-const allSongs: Song[] = songs;
+    /* const [currentSongIndex, setCurrentSongIndex] = useState(indexFromUrl); */
+    const [currentSongIndex, setCurrentSongIndex] = useState(isValidIndex ? indexFromUrl : 0);
+    // Keep URL in sync when changing songIndex manually
+    /*   useEffect(() => {
+        navigate(`/s/${currentSongIndex + 1}`, { replace: true });
+      }, [currentSongIndex]);
+     */
+    useEffect(() => {
+        const newIndex = songId ? parseInt(songId) - 1 : 0;
+        if (!isNaN(newIndex) && newIndex >= 0 && newIndex < allSongs.length) {
+            setCurrentSongIndex(newIndex);
+        }
+    }, [songId]);
 
-function App() {
-  const [guesses, setGuesses] = useState<(string | null)[]>([]);
-  const [guessHistory, setGuessHistory] = useState<Guess[]>([]);
-  const [input, setInput] = useState("");
-  const [currentGuessIndex, setCurrentGuessIndex] = useState(0);
-  const [selectedGuessIndex, setSelectedGuessIndex] = useState(currentGuessIndex);
-  const [gameOver, setGameOver] = useState(false); //track game over
-
-  const maxGuesses = 5;
-  const currentSong = allSongs[0]; //fixed for now, first song is picked, logic might be differently updated
-
-  const currentHint = currentSong?.hints?.[guesses.length]; //Extract hint
-
-  const handleGuessSubmit = (guess: string) => {
-    const isCorrect = guess.toLowerCase() === currentSong.title.toLowerCase();
-    const nextGuesses = [...guesses, isCorrect ? guess : null];
-    setGuesses(nextGuesses);
-
-    const guessText = guess.trim();
-    setGuessHistory(prev => [...prev, { text: guessText, isCorrect }]);
-
-    if (isCorrect) {
-      alert("✅ Correct!");
-      setGameOver(true);
-    } else if (nextGuesses.length >= maxGuesses) {
-      setGameOver(true);
-      alert("❌ Out of guesses!");
-    }
-    setCurrentGuessIndex(currentGuessIndex + 1);
-    setSelectedGuessIndex(currentGuessIndex + 1);
-
-    setInput("");
-  };
-
-  const handleSkip = () => {
-    if (guesses.length >= maxGuesses) return;
-
-    setGuessHistory(prev => [...prev, { text: "Skipped", skipped: true }]);
-
-    setGuesses([...guesses, null]); // Count this as a guess
-    setCurrentGuessIndex(currentGuessIndex + 1);
-    setSelectedGuessIndex(currentGuessIndex + 1);
-  };
-
-  return (
-    <div className="app">
-      <Header />
-      <main className="main-content">
-        <AudioPlayer songId={currentSong?.id || ""} hint={currentSong?.hints?.[selectedGuessIndex] ?? ""} currentGuessIndex={currentGuessIndex} gameOver={gameOver} />
-        <GuessBar
-          currentGuessIndex={guesses.length}
-          totalGuesses={guesses.filter((g) => g === null).length}
-          maxGuesses={maxGuesses}
-          selectedGuessIndex={selectedGuessIndex}
-          setSelectedGuessIndex={setSelectedGuessIndex}
-          handleSkip={handleSkip}
-          guessHistory={guessHistory}
+    return (
+        <Game
+            currentSongIndex={currentSongIndex}
+            setCurrentSongIndex={setCurrentSongIndex}
+            songs={allSongs}
         />
-        {!gameOver && (
-          <SearchBar
-            songList={songs}
-            onSubmitGuess={handleGuessSubmit}
-          />
-        )}
-        <RiffControls />
-        <Footer />
-      </main>
-    </div>
-  );
+    );
 }
-
-export default App;
