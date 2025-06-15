@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Heart, BarChart2, HelpCircle, Info, Settings } from "lucide-react";
+import { Heart, BarChart2, HelpCircle, Info, Settings, LayoutGrid } from "lucide-react";
 import "./Header.css";
 import LogoHeader from "../assets/LogoHeader-inlined.svg?react";
 import SupportModal from "./SupportModal";
@@ -21,7 +21,7 @@ export default function Header() {
             <BarChart2 className="icon" />
             <HelpCircle className="icon" onClick={() => setShowModalHowToPlay(true)}/>
             <Info className="icon" onClick={() => setShowModalInfo(true)} />
-            <Settings className="icon" />
+            <LayoutGrid className="icon"/>
           </nav>
         </div>
       </header>

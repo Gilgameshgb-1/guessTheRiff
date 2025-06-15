@@ -51,3 +51,9 @@
 .suggestions li:hover {
   background-color: #00ffcc;
 }
+
+@media (max-width: 600px){
+  .search-bar{
+    width:380px;
+  }
+}

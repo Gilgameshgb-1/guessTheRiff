@@ -90,3 +90,9 @@
   color: #ffaa00;
   font-style: italic;
 }
+
+@media(max-width:600px){
+    .skip-button{
+        height: 37px;
+    }
+}
