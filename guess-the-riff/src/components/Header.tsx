@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Heart, BarChart2, HelpCircle, Info, Settings, LayoutGrid } from "lucide-react";
 import "./Header.css";
 import LogoHeader from "../assets/LogoHeader-inlined.svg?react";
@@ -11,6 +12,11 @@ export default function Header() {
   const [showModalInfo, setShowModalInfo] = useState(false);
   const [showModalHowToPlay, setShowModalHowToPlay] = useState(false);
 
+  const navigate = useNavigate();
+  function redirectToPreviousGames(){
+    navigate("/previous-games");
+  }
+
   return (
     <>
       <header className="header">
@@ -21,7 +27,7 @@ export default function Header() {
             <BarChart2 className="icon" />
             <HelpCircle className="icon" onClick={() => setShowModalHowToPlay(true)}/>
             <Info className="icon" onClick={() => setShowModalInfo(true)} />
-            <LayoutGrid className="icon"/>
+            <LayoutGrid className="icon" onClick={() => redirectToPreviousGames()}/>
           </nav>
         </div>
       </header>

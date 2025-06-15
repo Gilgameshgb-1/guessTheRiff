@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate } from "
 import { useState, useEffect } from "react";
 import Game from "./Game";
 import songs from "../public/songs/songs.json";
+import PreviousGames from "./pages/PreviousGames";
 
 export default function App() {
     return (
         <Routes>
             <Route path="/s/:songId" element={<GameWrapper />} />
             <Route path="*" element={<Navigate to="/s/1" />} />
+            <Route path="/previous-games" element={<PreviousGames />} />
         </Routes>
     );
 }

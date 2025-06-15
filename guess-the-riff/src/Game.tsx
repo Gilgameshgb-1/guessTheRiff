@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
@@ -11,6 +11,11 @@ import GuessResult from "./components/GuessResult";
 import "./Game.css";
 import songs from "../public/songs/songs.json";
 import "./index.css"
+import correctMp3 from "../public/sfx/win.mp3";
+import wrongMp3 from "../public/sfx/fail.mp3";
+
+const wrongSound = new Audio(wrongMp3);
+const correctSound = new Audio(correctMp3);
 
 interface Song {
   id: string;
@@ -33,6 +38,12 @@ interface GameProps {
   songs: Song[];
 }
 
+type StoredRiffResult = {
+  status: "correct" | "wrong" | "skipped";
+  guesses: string[];
+  completed: boolean;
+};
+
 /* let currentGuessIndex = 0;
 
 const allSongs: Song[] = songs; */
@@ -50,13 +61,43 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
   //----Attempt to switch between songs via button
   const { songId } = useParams<{ songId: string }>();
   const navigate = useNavigate();
-
-  /*   const initialIndex = songId ? parseInt(songId, 10) - 1 : 0;
-    const [currentSongIndex, setCurrentSongIndex] = useState(initialIndex);
-    const currentSong = allSongs[currentSongIndex]; */
   const currentSong = songs[currentSongIndex];
-  //----------------------------------------------
 
+  let isPlayed = false;
+
+  useEffect(() => {
+    const saved = localStorage.getItem(`riff-${currentSong.id}-result`);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed.guesses) {
+        setGuessHistory(parsed.guesses);
+        setGuesses(parsed.guesses.map((g: Guess) => g.skipped ? null : g.text));
+        setGameOver(true); // lock out interaction if already done
+        setSelectedGuessIndex(parsed.guesses.length);
+        setCurrentGuessIndex(parsed.guesses.length);
+      }
+    } else {
+      // No saved data → fresh start
+      setGuesses([]);
+      setGuessHistory([]);
+      setCurrentGuessIndex(0);
+      setSelectedGuessIndex(0);
+      setGameOver(false);
+    }
+  }, [currentSongIndex]);
+
+  function checkLocalStorage(): boolean {
+    const resultKey = `riff-${currentSong.id}-result`;
+    const savedResult = localStorage.getItem(resultKey);
+
+    if(!savedResult) return false;
+
+    if (savedResult) { //nullcheck
+      const parsed: StoredRiffResult = JSON.parse(savedResult);
+      if (parsed.guesses.length >= 5) return true;
+      else return false;
+    }
+  }
   /*   const currentHint = currentSong?.hints?.[guesses.length]; //Extract hint */
 
   const handleGuessSubmit = (guess: string) => {
@@ -64,16 +105,24 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
     const guessText = guess.trim();
     setGuessHistory(prev => [...prev, { text: guessText, isCorrect }]);
 
+    //Local storage stuff again below
+    //-------------------------------
     if (isCorrect) {
+      saveResult(currentSong.id, "correct", guessHistory, true);
+      correctSound.play();
       setGameOver(true);
-      return;
+      return; // Should be here?
     }
 
     const nextGuesses = [...guesses, isCorrect ? guess : null];
     setGuesses(nextGuesses);
 
     if (nextGuesses.length >= maxGuesses) {
+      saveResult(currentSong.id, "wrong", guessHistory, true);
       setGameOver(true);
+    }else {
+      saveResult(currentSong.id, "wrong", guessHistory, false);
+      wrongSound.play();
     }
     setCurrentGuessIndex(currentGuessIndex + 1);
     setSelectedGuessIndex(currentGuessIndex + 1);
@@ -82,12 +131,19 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
   };
 
   const handleSkip = () => {
+    if (checkLocalStorage()) return; //Exit if already guessed
+
     const nextGuesses = [...guesses, null];
     const nextGuessIndex = currentGuessIndex + 1;
 
+    wrongSound.play();
+
     if (nextGuesses.length >= maxGuesses) {
       if (gameOver === true) return;
+      saveResult(currentSong.id, "skipped", guessHistory, true);
       setGameOver(true);
+    }else{
+      saveResult(currentSong.id, "skipped", guessHistory, false);
     }
 
     setGuesses(nextGuesses);
@@ -97,10 +153,30 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
   };
 
   const resetGame = () => {
-    setGuesses([]);
-    setGuessHistory([]);
-    setSelectedGuessIndex(0);
-    setGameOver(false);
+    const saved = localStorage.getItem(`riff-${currentSong.id}-result`);
+    if (!saved) {
+      setGuesses([]);
+      setGuessHistory([]);
+      setCurrentGuessIndex(0);
+      setSelectedGuessIndex(0);
+      setGameOver(false);
+    }
+  };
+
+  const saveResult = (
+    songId: string,
+    status: "correct" | "wrong" | "skipped",
+    guessesArray: Guess[],
+    completed: boolean
+  ) => {
+    localStorage.setItem(
+      `riff-${songId}-result`,
+      JSON.stringify({
+        status,
+        guesses: guessesArray,
+        completed,
+      })
+    );
   };
 
   return (
@@ -122,13 +198,13 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
           handleSkip={handleSkip}
           guessHistory={guessHistory}
         />
-        {!gameOver && (
+        {(/* !gameOver || */ !checkLocalStorage()) && (
           <SearchBar
             songList={songs}
             onSubmitGuess={handleGuessSubmit}
           />
         )}
-        {gameOver && (
+        {(gameOver || checkLocalStorage()) && (
           <GuessResult
             title={currentSong.title}
             description={currentSong.description}

@@ -1,0 +1,12 @@
+.previous-wrapper {
+  width: min(1020px, 90%);
+  margin-inline: auto;
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 2rem 1.2rem;
+}
+
+.card-link {
+  text-decoration: none;
+}

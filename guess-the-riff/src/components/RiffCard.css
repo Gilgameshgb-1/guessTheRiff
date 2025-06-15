@@ -1,0 +1,21 @@
+.riff-card {
+  border: 2px solid #fff;
+  border-radius: 18px;
+  padding: 1.1rem 0.7rem;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.25;
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+
+.riff-card:hover { transform: translateY(-4px); }
+
+.riff-card.correct   { background: #a8f0c2; border-color: #a8f0c2; color:#034d2d; }
+.riff-card.wrong     { background: #f7b4b4; border-color: #f7b4b4; color:#5b1111; }
+.riff-card.not-played{ background: #151b1b; border-color: #fff;      color:#eee;    }
+
+.riff-card .title   { font-weight: 700; }
+.riff-card .date    { font-size: 0.85rem; margin-top: 0.2rem; }
+.riff-card .note    { margin-top: 0.6rem; font-size: 0.85rem;}
