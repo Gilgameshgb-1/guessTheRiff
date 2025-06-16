@@ -39,7 +39,8 @@ interface GameProps {
 }
 
 type StoredRiffResult = {
-  status: "correct" | "wrong" | "skipped";
+/*   status: "correct" | "wrong" | "skipped"; */
+  status: "correct" | "wrong" | "not played"; //Try to fix card level selector showing up wrong
   guesses: string[];
   completed: boolean;
 };
@@ -94,21 +95,24 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
 
     if (savedResult) { //nullcheck
       const parsed: StoredRiffResult = JSON.parse(savedResult);
-      if (parsed.guesses.length >= 5) return true;
+      if (parsed.completed === true) return true;
       else return false;
     }
+    return false; //fix for linter error no return
   }
   /*   const currentHint = currentSong?.hints?.[guesses.length]; //Extract hint */
 
   const handleGuessSubmit = (guess: string) => {
     const isCorrect = guess.toLowerCase() === currentSong.title.toLowerCase();
     const guessText = guess.trim();
+    const updatedGuessHistory = [...guessHistory, { text: guessText, isCorrect }]; //Try to fix inconsistencies with saving array elements
     setGuessHistory(prev => [...prev, { text: guessText, isCorrect }]);
 
     //Local storage stuff again below
     //-------------------------------
     if (isCorrect) {
-      saveResult(currentSong.id, "correct", guessHistory, true);
+      //saveResult(currentSong.id, "correct", guessHistory, true);
+      saveResult(currentSong.id, "correct", updatedGuessHistory, true);
       correctSound.play();
       setGameOver(true);
       return; // Should be here?
@@ -118,10 +122,12 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
     setGuesses(nextGuesses);
 
     if (nextGuesses.length >= maxGuesses) {
-      saveResult(currentSong.id, "wrong", guessHistory, true);
+      //saveResult(currentSong.id, "wrong", guessHistory, true);
+      saveResult(currentSong.id, "wrong", updatedGuessHistory, true);
       setGameOver(true);
     }else {
-      saveResult(currentSong.id, "wrong", guessHistory, false);
+      //saveResult(currentSong.id, "wrong", guessHistory, false);
+      saveResult(currentSong.id, "not played", updatedGuessHistory, false);
       wrongSound.play();
     }
     setCurrentGuessIndex(currentGuessIndex + 1);
@@ -135,15 +141,18 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
 
     const nextGuesses = [...guesses, null];
     const nextGuessIndex = currentGuessIndex + 1;
+    const updatedGuessHistory = [...guessHistory, { text: "Skipped", skipped: true }]; //Try to fix inconsistencies with saving array elements
 
     wrongSound.play();
 
     if (nextGuesses.length >= maxGuesses) {
-      if (gameOver === true) return;
-      saveResult(currentSong.id, "skipped", guessHistory, true);
-      setGameOver(true);
+      /* if (gameOver === true) return; */ //protection condition i guess, this atribute sucks
+      //saveResult(currentSong.id, "skipped", guessHistory, true);
+      saveResult(currentSong.id, "wrong", updatedGuessHistory, true);
+      /* setGameOver(true); */
     }else{
-      saveResult(currentSong.id, "skipped", guessHistory, false);
+      //saveResult(currentSong.id, "skipped", guessHistory, false);
+      saveResult(currentSong.id, "not played", updatedGuessHistory, false);
     }
 
     setGuesses(nextGuesses);
@@ -165,7 +174,7 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
 
   const saveResult = (
     songId: string,
-    status: "correct" | "wrong" | "skipped",
+    status: "correct" | "wrong" | "not played",
     guessesArray: Guess[],
     completed: boolean
   ) => {
@@ -191,7 +200,8 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
         />
         <GuessBar
           currentGuessIndex={guesses.length}
-          totalGuesses={guesses.filter((g) => g === null).length}
+          //totalGuesses={guesses/* .filter((g) => g === null) */.length}
+          totalGuesses={guessHistory.filter(g => !g.isCorrect).length} //attempt to fix glaring issue
           maxGuesses={maxGuesses}
           selectedGuessIndex={selectedGuessIndex}
           setSelectedGuessIndex={setSelectedGuessIndex}
@@ -204,7 +214,7 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
             onSubmitGuess={handleGuessSubmit}
           />
         )}
-        {(gameOver || checkLocalStorage()) && (
+        {(/* gameOver ||  */checkLocalStorage()) && (
           <GuessResult
             title={currentSong.title}
             description={currentSong.description}
