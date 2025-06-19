@@ -44,8 +44,24 @@
   cursor: pointer;
 }
 
+.guitar-icon{
+  width: 5%;
+}
+
 @media(max-width: 600px){
+  .guitar-icon{
+    width: 7%;
+  }
   .modal-content{
     width:340px !important;
+  }
+}
+
+@media(max-width: 390px){
+  .guitar-icon{
+    width: 7%;
+  }
+  .modal-content{
+    width:300px !important;
   }
 }

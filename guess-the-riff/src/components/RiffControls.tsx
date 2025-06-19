@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./RiffControls.css";
 import { ChevronsLeft, ChevronsRight } from "lucide-react";
+import Next from "../assets/next.svg?react";
+import Previous from "../assets/previous.svg?react";
 
 interface RiffControlsProps {
   onPrevious: () => void;
@@ -44,12 +46,12 @@ export default function RiffControls({ onPrevious, onNext }: RiffControlsProps) 
   return (
     <div className="riff-controls">
       <button className="nav-button" onClick={onPrevious}>
-        <ChevronsLeft />
+        <Previous/>
       </button>
       <span className="riff-timer">Next riff in: {formatTime(timeLeft.hours)}h:{formatTime(timeLeft.minutes)}m:{formatTime(timeLeft.seconds)}s
       </span>
       <button className="nav-button" onClick={onNext}>
-        <ChevronsRight />
+        <Next/>
       </button>
     </div>
   );

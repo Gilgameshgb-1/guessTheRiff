@@ -1,6 +1,7 @@
 import "./GuessResult.css";
 import AmazonIcon from "../assets/amazon-icon.svg?react"
 import EbayIcon from "../assets/ebay-icon.svg?react"
+import Guitar from "../assets/guitar.svg?react"
 
 interface GuessResultProps {
   title: string;
@@ -14,7 +15,7 @@ export default function GuessResult({ title, description, ebayURL, amazonURL }: 
     <div className="guess-result-container">
       <div className="guess-result-header">
         <div className="song-info">
-          <span className="song-icon">🎸</span>
+          <span className="song-icon"><Guitar className="guitar-icon"/></span>
           <h2 className="song-title">{title}</h2>
         </div>
         <div className="affiliate-icons">

@@ -25,6 +25,8 @@
 }
 
 .guess-box.used {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
     background-color: black;
     color: white;
 }
@@ -51,7 +53,7 @@
 
 .guess-remaining {
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-top: 0.25rem;
 }
 
@@ -70,7 +72,7 @@
     margin-top: 1rem;
     width: 100%;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .guess-entry {
@@ -87,12 +89,12 @@
 }
 
 .guess-entry.skipped {
-  color: #ffaa00;
-  font-style: italic;
+    color: #ffaa00;
+    font-style: italic;
 }
 
-@media(max-width:600px){
-    .skip-button{
+@media(max-width:600px) {
+    .skip-button {
         height: 37px;
     }
 }

@@ -1,4 +1,6 @@
 /* Set global background and layout */
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+
 body,
 html,
 #root {
@@ -9,7 +11,7 @@ html,
   background-color: #031111;
   /* dark theme like in your screenshot */
   color: white;
-  font-family: 'Cairo-Regular', sans-serif;
+  font-family: 'Cairo'
 }
 
 .app {

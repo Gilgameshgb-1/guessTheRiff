@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
-import AudioPlayer from "./components/AudioPlayer";
+import AudioPlayer from "./components/AudioPlayer"; //old player
 import GuessBar from "./components/GuessBar";
 import SearchBar from "./components/SearchBar";
 import RiffControls from "./components/RiffControls";
@@ -190,12 +190,15 @@ export default function Game({ currentSongIndex, setCurrentSongIndex, songs }: G
 
   return (
     <div className="app">
-      <Header />
+      <Header
+         lastSong={songs.length}
+      />
       <main className="main-content">
         <AudioPlayer
           songId={currentSong?.id || ""}
           hint={currentSong?.hints?.[selectedGuessIndex] ?? ""}
-          currentGuessIndex={currentGuessIndex} gameOver={gameOver}
+          currentGuessIndex={currentGuessIndex} 
+          completed={checkLocalStorage()}
           selectedGuessIndex={selectedGuessIndex}
         />
         <GuessBar

@@ -67,3 +67,21 @@
     /* reduce gap to pull icons closer together */
   }
 }
+
+
+@media (max-width: 390px) {
+  .header-content {
+    padding: 0 2rem;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .logo-svg {
+    margin-right: 2rem;
+  }
+
+  .nav-icons {
+    gap: 0.9rem;
+    /* reduce gap to pull icons closer together */
+  }
+}

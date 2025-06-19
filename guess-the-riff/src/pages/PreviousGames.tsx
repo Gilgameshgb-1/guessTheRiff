@@ -24,7 +24,9 @@ function readResult(id: string): RiffStatus {
 export default function PreviousGames() {
   return (
     <>
-      <Header />
+      <Header 
+        lastSong={songs.length}
+      />
       <main className="previous-wrapper">
         {songs.map((song, idx) => (
           <Link key={song.id} to={`/s/${idx + 1}`} className="card-link">

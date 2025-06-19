@@ -2,16 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import "./AudioPlayer.css";
 import PlayIcon from "../assets/playbutton.svg?react";
 import HintCheck from "../assets/hintCheck.svg?react";
+import SoundIcon from "../assets/sound_speaker_black_bolts_turquoise.svg?react";
 
 interface AudioPlayerProps {
   songId: string;
   hint: string;
   currentGuessIndex: number;
   selectedGuessIndex: number;
-  gameOver: boolean;
+  completed: boolean;
 }
 
-export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver, selectedGuessIndex }: AudioPlayerProps) {
+export default function AudioPlayer({ songId, hint, currentGuessIndex, completed, selectedGuessIndex }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -64,8 +65,8 @@ export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver,
       <p className="audio-riff">
         <span className="riff-number">Riff #{numericId}</span>{" "}
       </p>
-      <p className={`audio-hint ${selectedGuessIndex === 0 ? "hidden" : ""}`}> 
-        {hint} 
+      <p className={`audio-hint ${selectedGuessIndex === 0 ? "hidden" : ""}`}>
+        {hint}
         <HintCheck className="hint-check-icon" style={{ display: (selectedGuessIndex === 0 || selectedGuessIndex >= 5) ? "none" : "inline" }} /></p>
       <div className="audio-box">
         <div className="audio-top-row">
@@ -91,9 +92,10 @@ export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver,
           </button>
 
           <div className="volume-control">
-            <span className="volume-icon">🔊</span>
+            <SoundIcon className="volume-icon"/>
             <input
               type="range"
+              className="volume-slider"
               min={0}
               max={1}
               step={0.01}
@@ -105,22 +107,20 @@ export default function AudioPlayer({ songId, hint, currentGuessIndex, gameOver,
                   audioRef.current.volume = newVolume;
                 }
               }}
-              className="volume-slider"
             />
           </div>
         </div>
-
         <audio
           ref={audioRef}
           //src={`/songs/${songId}/${songId}.mp3`}
           src={
-            gameOver ?
+            completed ?
               `/songs/${songId}/${songId}.mp3`
               : `/songs/${songId}/${currentGuessIndex >= 5 ? songId : `guess${currentGuessIndex + 1}`}.mp3`
           }
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}
-          onEnded={() => {setIsPlaying(false); setCurrentTime(0);}}
+          onEnded={() => { setIsPlaying(false); setCurrentTime(0); }}
         />
       </div>
     </div>

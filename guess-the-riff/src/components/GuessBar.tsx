@@ -29,7 +29,7 @@ export default function GuessBar({ currentGuessIndex, totalGuesses, maxGuesses, 
             }}
             style={{ cursor: index <= currentGuessIndex ? "pointer" : "default" }}
           >
-            {index < totalGuesses ? <Skull /> : guess}
+            {index < totalGuesses ? <Skull className="skull-icon"/> : guess}
           </div>
         ))}
         <button className="skip-button" onClick={handleSkip}>

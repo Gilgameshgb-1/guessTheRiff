@@ -3,7 +3,7 @@
   padding: 1.2rem 1.5rem;
   border-radius: 12px;
   color: #fff;
-  max-width: 720px;
+  max-width: 680px;
   margin: 1.5rem auto;
   margin-bottom: 2rem;
 }
@@ -21,12 +21,12 @@
 }
 
 .song-icon {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-right: 0.6rem;
 }
 
 .song-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #00ffce;
   margin: 0;
@@ -38,8 +38,8 @@
 }
 
 .affiliate-icon {
-  width: 28px;
-  height: 28px;
+  width: 80px;
+  height: 30px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -53,4 +53,26 @@
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
+}
+
+.guitar-icon{
+  width: 30px;
+}
+
+@media (max-width: 600px){
+  .affiliate-icon{
+    width: 65px;
+  }
+  .guess-result-container{
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 390px) {
+  .affiliate-icon{
+    width: 50px;
+  }
+  .guess-result-container{
+    max-width: 300px;
+  }
 }

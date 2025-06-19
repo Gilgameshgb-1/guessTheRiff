@@ -3,23 +3,28 @@
   padding: 2rem 1rem;
   text-align: center;
   color: #888;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   max-width: 800px;
   margin-inline: auto;
 }
 
 .footer-logo {
-  width: 160px;
+  width: 20%;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .footer-separator {
   border: none;
   height: 2px;
   background-color: #00ffcc;
-  width: 100px;
+  width: 50%;
   margin: 1rem auto;
+}
+
+.madeby-logo{
+  margin-top: 5%;
+  width: 30%;
 }
 
 .footer-text {

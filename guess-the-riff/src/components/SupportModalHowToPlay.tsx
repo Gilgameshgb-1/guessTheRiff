@@ -1,4 +1,5 @@
 import "./SupportModalHowToPlay.css";
+import Guitar from "../assets/guitar.svg?react";
 
 interface SupportModalHowToPlayProps {
   onClose: () => void;
@@ -9,7 +10,7 @@ export default function SupportModalHowToPlay({ onClose }: SupportModalHowToPlay
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>×</button>
-        <h2>How to play Guess the Riff🎸</h2>
+        <h2>How to play Guess the Riff <Guitar className="guitar-icon"/></h2>
         <p>
           Click play to hear a riff snippet from a song.
         </p>

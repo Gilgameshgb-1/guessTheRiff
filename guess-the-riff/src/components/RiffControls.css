@@ -10,13 +10,12 @@
 }
 
 .nav-button {
+  width: 6%;
   background-color: #00ffcc;
-  color: black;
   border: none;
   padding: 0.6rem;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -27,7 +26,16 @@
 }
 
 @media (max-width: 600px){
+  .nav-button{
+    width: 12%;
+  }
   .riff-controls{
     width:380px;
+  }
+}
+
+@media (max-width: 390px) {
+  .riff-controls{
+    width:350px;
   }
 }

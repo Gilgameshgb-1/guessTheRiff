@@ -1,5 +1,6 @@
 import "./Footer.css";
-import Logo from "../assets/NeedsReplacement.svg?react";
+import Logo from "../assets/GTRLogo.svg?react";
+import MadeBy from "../assets/madeBy.svg?react";
 
 export default function Footer() {
     return (
@@ -15,6 +16,7 @@ export default function Footer() {
                 All trademarks, registered trademarks, product names, and company names or logos mentioned herein are the property of their respective owners. 
                 If you are a rights holder and wish to have any content removed, please contact us at support@guessthe.wtf.
             </p>
+            <MadeBy className="madeby-logo"/>
         </footer>
     );
 }

@@ -16,7 +16,6 @@
 }
 
 .audio-hint {
-  /* color: white; */
   height: 1rem;
   margin-bottom: 1rem;
   align-self: flex-start;
@@ -32,7 +31,6 @@
   height: 14px;
   margin-left: 6px;
   vertical-align: middle;
-  color: #ff00ea;
 }
 
 .audio-box {
@@ -55,7 +53,7 @@
 }
 
 .audio-timestamp {
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   padding-right: 1rem;
   font-weight: bold;
   color: black;
@@ -68,6 +66,8 @@
   cursor: pointer;
   accent-color: #000000;
   background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 /* Style the thumb and track */
@@ -76,7 +76,7 @@
   appearance: none;
   width: 14px;
   height: 14px;
-  background: #00ffce;
+  background: #000000;
   border: none;
   border-radius: 50%;
   margin-top: -5px;
@@ -88,22 +88,43 @@
   border-radius: 4px;
 }
 
-/* For Firefox */
 .audio-slider::-moz-range-thumb {
   width: 14px;
   height: 14px;
-  background: #00ffce;
+  background: #000000;
   border: none;
   border-radius: 50%;
 }
 
 .audio-slider::-moz-range-track {
-  background: #333;
+  background: #00ffce;
   height: 4px;
   border-radius: 4px;
 }
 
+.volume-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #000000;
+  border: none;
+  border-radius: 50%;
+}
+
+.volume-slider::-moz-range-track {
+  background: #00ffce;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.audio-controls-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .audio-play {
+  margin-left: 48%;
   background-color: black;
   border: none;
   border-radius: 50%;
@@ -122,34 +143,64 @@
   fill: #000000;
 }
 
-.audio-controls-row {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Center play button */
-  width: 100%;
-}
-
 .volume-control {
   position: absolute;
-  right: 0;
+  margin-top: 0.5%;
+  margin-left: 77%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .volume-icon {
-  font-size: 1.2rem;
+  width: 25px;
+  height: 25px;
 }
 
 .volume-slider {
-  width: 120px;
-  accent-color: #00ffcc;
+  flex-grow: 1;
+  height: 4px;
+  cursor: pointer;
+  accent-color: #000000;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #000000;
+  border: none;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+  background: #00ffcc;
+  height: 5px;
+  border-radius: 4px;
+}
+
+@-moz-document url-prefix() {
+  .volume-control {
+    position: absolute;
+    margin-top: 0.5%;
+    margin-left: 72%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 600px) {
-  .audio-player-container{
+  .volume-control {
+    margin-left: 67%;
+  }
+
+  .audio-player-container {
     width: 350px;
   }
 
@@ -165,7 +216,21 @@
     font-size: 0.9rem;
   }
 
-  .audio-riff{
+  .audio-riff {
     margin-top: 20%;
+  }
+}
+
+@media (max-width: 390px) {
+  .audio-player-container {
+    max-width: 320px;
+  }
+
+  .volume-control {
+    margin-left: 64%;
+  }
+
+  .audio-play {
+    margin-left: 44%;
   }
 }

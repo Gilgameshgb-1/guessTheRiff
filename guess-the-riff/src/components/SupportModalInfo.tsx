@@ -1,4 +1,5 @@
 import "./SupportModalInfo.css";
+import Guitar from "../assets/guitar.svg?react";
 
 interface SupportModalInfoProps {
   onClose: () => void;
@@ -9,7 +10,7 @@ export default function SupportModalInfo({ onClose }: SupportModalInfoProps) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>×</button>
-        <h2>Info 🎸</h2>
+        <h2>Info <Guitar className="guitar-icon"/></h2>
         <p>
           Welcome to Guess The Riff – the ultimate daily audio challenge for music lovers!
         </p>
@@ -20,8 +21,7 @@ export default function SupportModalInfo({ onClose }: SupportModalInfoProps) {
         <p>
           Whether you're a casual listener or a die-hard music fan, Guess The Riff is a fun way to test your ear, rediscover classic tracks, and challenge your friends.
         </p>
-        <br></br>
-        <p><small>Our copyright policy: Copyright for the images, games, songs or other displays is likely retained by the publisher/producer and/or artist(s) who 
+        <p><small style={{ fontSize: '0.65rem' }}>Our copyright policy: Copyright for the images, games, songs or other displays is likely retained by the publisher/producer and/or artist(s) who 
           produced the item in question. It is believed that the use of these images falls under United States fair use law. 
           Any other uses of this image might be copyright infringement. 
           If you require that the image/game/puzzle or any other source be removed from the site, please reach out via email.</small></p>

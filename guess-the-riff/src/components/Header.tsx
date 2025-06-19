@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Heart, BarChart2, HelpCircle, Info, Settings, LayoutGrid } from "lucide-react";
 import "./Header.css";
 import LogoHeader from "../assets/LogoHeader-inlined.svg?react";
@@ -7,7 +7,11 @@ import SupportModal from "./SupportModal";
 import SupportModalInfo from "./SupportModalInfo";
 import SupportModalHowToPlay from "./SupportModalHowToPlay";
 
-export default function Header() {
+interface HeaderProps {
+  lastSong: number;
+}
+
+export default function Header({lastSong}: HeaderProps) {
   const [showModal, setShowModal] = useState(false);
   const [showModalInfo, setShowModalInfo] = useState(false);
   const [showModalHowToPlay, setShowModalHowToPlay] = useState(false);
@@ -21,7 +25,9 @@ export default function Header() {
     <>
       <header className="header">
         <div className="header-content">
-          <LogoHeader className="logo-svg" />
+          <Link to={`http://localhost:5173/s/${lastSong}`}>
+            <LogoHeader className="logo-svg" />
+          </Link>
           <nav className="nav-icons">
             <Heart className="icon" onClick={() => setShowModal(true)} />
             <BarChart2 className="icon" />
